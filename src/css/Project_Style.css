@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani Medium";
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.3)),url("../asserts/img/pexels-christina-morillo-1181275.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo h1{
+    width: 135px;
+    color: lightblue;
+    font-size: 34px;
+}
+.nav-logo h1:hover{
+    color: white;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: lightblue;
+    display: block;
+    margin: auto;
+    transition:.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.title{
+    margin: 80px 130px;
+    color: white;
+
+}
+.title h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.title h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.title h1 span{
+    color: lightblue;
+    animation: chg 1s ease;
+    animation-delay: .5s;
+}
+@keyframes chg {
+    0%{
+        color: white;
+    }
+    50%{
+        color: azure;
+    }
+    100%{
+        color: lightblue;
+    }
+}
+.vertical-bar{
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.Search-icon{
+    height: 60%;
+    width: 80px;
+}
+.Search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Social-icon{
+    height: 35%;
+    width: 80px;
+    background: lightblue;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.Social-icon .fa {
+    margin: 15px 23px;
+    display: block;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-close{
+    visibility: hidden;
+}
+.fa-bars{
+    visibility: hidden;
+}
+.project img{
+    height: 200px;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.6)),url("../asserts/img/3.png ");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: absolute;
+}
+.java img{
+    left: 10%;
+    cursor: pointer;
+}
+.web img{
+    right: 10%;
+    cursor: pointer;
+}
+.java h1{
+    z-index: 1;
+    position: absolute;
+    left: 18%;
+    bottom: 35%;
+    color: white;
+    cursor: pointer;
+}
+.java h2{
+    z-index: 1;
+    position: absolute;
+    left: 16%;
+    bottom: 30%;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.web h1{
+    z-index: 1;
+    position: absolute;
+    right: 18%;
+    bottom: 35%;
+    color: white;
+    cursor: pointer;
+}
+.web h2{
+    z-index: 1;
+    position: absolute;
+    right: 15%;
+    bottom: 30%;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .project img{
+        height: 200px;
+        width: 400px;
+        margin: auto;
+        border-radius: 20px;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.6)),url("../asserts/img/3.png ");
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    .java img{
+        left: 7%;
+        cursor: pointer;
+    }
+    .web img{
+        right: 10%;
+    }
+    .java h1{
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+        bottom: 25%;
+        color: white;
+        cursor: pointer;
+        font-size: 28px;
+    }
+    .java h2{
+        z-index: 1;
+        position: absolute;
+        left: 16%;
+        bottom: 18%;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    .web h1{
+        z-index: 1;
+        position: absolute;
+        right: 22%;
+        bottom: 25%;
+        color: white;
+        cursor: pointer;
+        font-size: 28px;
+    }
+    .web h2{
+        z-index: 1;
+        position: absolute;
+        right: 17%;
+        bottom: 18%;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .project img{
+        height: 150px;
+        width: 250px;
+        margin: auto;
+        border-radius: 20px;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.6)),url("../asserts/img/3.png ");
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        position: absolute;
+    }
+    .java img{
+        left: 7%;
+        cursor: pointer;
+    }
+    .web img{
+        right: 13%;
+    }
+    .java h1{
+        z-index: 1;
+        position: absolute;
+        left: 16%;
+        bottom: 40%;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .java h2{
+        z-index: 1;
+        position: absolute;
+        left: 12%;
+        bottom: 35%;
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    .web h1{
+        z-index: 1;
+        position: absolute;
+        right: 23%;
+        bottom: 40%;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .web h2{
+        z-index: 1;
+        position: absolute;
+        right: 17%;
+        bottom: 35%;
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+    .project img{
+        height: 150px;
+        width: 350px;
+        margin: auto;
+        border-radius: 20px;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.6)),url("../asserts/img/3.png ");
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        position: absolute;
+        display: block;
+    }
+    .java img{
+        left: 10%;
+        cursor: pointer;
+        bottom: 40%;
+    }
+    .web img{
+        left: 10%;
+        cursor: pointer;
+        bottom: 10%;
+    }
+    .java h1{
+        z-index: 1;
+        position: absolute;
+        left: 40%;
+        bottom: 46%;
+        color: white;
+        cursor: pointer;
+    }
+    .java h2{
+        z-index: 1;
+        position: absolute;
+        left: 25%;
+        bottom: 44%;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    .web h1{
+        z-index: 1;
+        position: absolute;
+        left: 40%;
+        bottom:16%;
+        color: white;
+        cursor: pointer;
+    }
+    .web h2{
+        z-index: 1;
+        position: absolute;
+        left: 25%;
+        bottom: 14%;
+        color: white;
+        font-size: 18px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+    .project img{
+        height: 150px;
+        width: 250px;
+        margin: auto;
+        border-radius: 20px;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.6)),url("../asserts/img/3.png ");
+        background-position: center;
+        background-size: cover;
+        overflow-x: hidden;
+        position: absolute;
+        display: block;
+    }
+    .java img{
+        left: 10%;
+        cursor: pointer;
+        bottom: 35%;
+    }
+    .web img{
+        left: 10%;
+        cursor: pointer;
+        bottom: 5%;
+    }
+    .java h1{
+        z-index: 1;
+        position: absolute;
+        left: 35%;
+        bottom: 49%;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .java h2{
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+        bottom: 44%;
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+    .web h1{
+        z-index: 1;
+        position: absolute;
+        left: 35%;
+        bottom: 19%;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+    }
+    .web h2{
+        z-index: 1;
+        position: absolute;
+        left: 20%;
+        bottom: 14%;
+        color: white;
+        font-size: 14px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+}
+

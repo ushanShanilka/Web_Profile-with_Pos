@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project_Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/Project_Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <h1>Ushan Shanilka</h1>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()" style="color: white"></i>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="skills.html"><li>SKILLS</li></a>
+                    <a href="project.html"><li>PROJECTS</li></a>
+                    <a href="education.html"><li>EDUCATION</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="title">
+            <h1>What is My <span>PROJECT ?</span> </h1>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="vertical-bar">
+            <div class="Search-icon">
+                <i class="fa fa-list" ></i>
+            </div>
+            <div class="Social-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-github"></i>
+            </div>
+        </div>
+        <div class="project">
+            <div class="java">
+                <img>
+                <h1>JAVA Project</h1></a>
+                <h2>#Click here to Open Java Project </h2>
+            </div>
+            <a href="inwebproject.html"><div class="web">
+                <img>
+                <h1>WEB Project</h1>
+                <h1></h1>
+                <h2>#Click here to Open WEB Project</h2>
+            </div></a>
+        </div>
+    </div>
+
+<script>
+    var show = document.getElementById("nav-links");
+    function showMenu(){
+        show.style.right = "0";
+    }
+    function closeMenu(){
+        show.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

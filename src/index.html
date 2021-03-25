@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home_Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/Style.css ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <h1>Ushan Shanilka</h1>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()" style="color: white"></i>
+                <ul>
+                    <a href="index.html"><li>HOME</li></a>
+                    <a href="skills.html"><li>SKILLS</li></a>
+                    <a href="project.html"><li>PROJECTS</li></a>
+                    <a href="education.html"><li>EDUCATION</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="title">
+            <h1>WELCOME My <span>Profile</span> </h1>
+            <h2>You Can Get My Details Here.</h2>
+            <button type="button" class="btn">ABOUT</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="pro-pic">
+            <img>
+        </div>
+        <div class="vertical-bar">
+            <div class="Search-icon">
+                <i class="fa fa-list" ></i>
+            </div>
+            <div class="Social-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+                <i class="fa fa-github"></i>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var show = document.getElementById("nav-links");
+    function showMenu(){
+        show.style.right = "0";
+    }
+    function closeMenu(){
+        show.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

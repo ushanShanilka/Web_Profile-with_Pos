@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani Medium";
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.1)),url("../asserts/img/pexels-christina-morillo-1181325.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo h1{
+    width: 135px;
+    color: #00ff00;
+    font-size: 34px;
+}
+.nav-logo h1:hover{
+    color: white;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #00ff00;
+    display: block;
+    margin: auto;
+    transition:.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.title{
+    margin: 80px 130px;
+    color: white;
+
+}
+.title h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.title h1 span{
+    color: #00ff00;
+    animation: chg 1s ease;
+    animation-delay: .5s;
+}
+
+@keyframes chg {
+    0%{
+        color: black;
+    }
+    100%{
+        color: #00ff00;
+    }
+}
+.skills div{
+    display: inline;
+}
+.skills  div {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    animation: chg 1s ease;
+    animation-delay: .5s;
+}
+@keyframes chg {
+    0%{
+        color: white;
+    }
+    50%{
+        color: azure;
+    }
+    100%{
+        color: black;
+    }
+}
+.skills  div h1{
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 50%;
+    margin: auto;
+    position: absolute;
+    padding-left: 30%;
+}
+.skills  div h2{
+    font-size: 28px;
+    font-weight: bold;
+    bottom: 30%;
+    margin: auto;
+    position: absolute;
+    padding-left: 35%;
+}
+.java{
+    left: 15%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border: 10px solid rebeccapurple;
+}
+.css{
+    left: 35%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border: 10px solid yellow;
+}
+.html{
+    left: 55%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border: 10px solid blue;
+}
+.js{
+    left: 75%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border: 10px solid lime;
+}
+.vertical-bar{
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.Search-icon{
+    height: 60%;
+    width: 80px;
+}
+.Search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Social-icon{
+    height: 35%;
+    width: 80px;
+    background: #00ff00;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.Social-icon .fa {
+    margin: 15px 23px;
+    display: block;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-close{
+    visibility: hidden;
+}
+.fa-bars{
+    visibility: hidden;
+}
+
+
+
+@media (max-width: 1024px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .skills  div {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: white;
+        animation: chg 1s ease;
+        animation-delay: .5s;
+    }
+    .skills  div h1{
+        font-size: 20px;
+        font-weight: bold;
+        bottom: 50%;
+        margin: auto;
+        position: absolute;
+        padding-left: 30%;
+    }
+    .skills  div h2{
+        font-size: 20px;
+        font-weight: bold;
+        bottom: 30%;
+        margin: auto;
+        position: absolute;
+        padding-left: 35%;
+    }
+    .java{
+        left: 15%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid rebeccapurple;
+    }
+    .css{
+        left: 35%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid yellow;
+    }
+    .html{
+        left: 55%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid blue;
+    }
+    .js{
+        left: 75%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid lime;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .skills  div {
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: white;
+        animation: chg 1s ease;
+        animation-delay: .5s;
+    }
+    .skills  div h1{
+        font-size: 20px;
+        font-weight: bold;
+        bottom: 50%;
+        margin: auto;
+        position: absolute;
+        padding-left: 30%;
+    }
+    .skills  div h2{
+        font-size: 20px;
+        font-weight: bold;
+        bottom: 30%;
+        margin: auto;
+        position: absolute;
+        padding-left: 35%;
+    }
+    .java{
+        left: 8%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid rebeccapurple;
+    }
+    .css{
+        left: 28%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid yellow;
+    }
+    .html{
+        left: 48%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid blue;
+    }
+    .js{
+        left: 68%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border: 10px solid lime;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+    .skills  div {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background: white;
+        animation: chg 1s ease;
+        animation-delay: .5s;
+    }
+    .skills  div h1{
+        font-size: 14px;
+        font-weight: bold;
+        bottom: 50%;
+        margin: auto;
+        position: absolute;
+        padding-left: 30%;
+    }
+    .skills  div h2{
+        font-size: 14px;
+        font-weight: bold;
+        bottom: 30%;
+        margin: auto;
+        position: absolute;
+        padding-left: 35%;
+    }
+    .java{
+        left: 8%;
+        bottom: 40%;
+        margin: auto;
+        position: absolute;
+        border: 8px solid rebeccapurple;
+    }
+    .css{
+        left: 8%;
+        bottom: 15%;
+        margin: auto;
+        position: absolute;
+        border: 8px solid yellow;
+    }
+    .html{
+        left: 60%;
+        bottom: 40%;
+        margin: auto;
+        position: absolute;
+        border: 8px solid blue;
+    }
+    .js{
+        left: 60%;
+        bottom: 15%;
+        margin: auto;
+        position: absolute;
+        border: 8px solid lime;
+    }
+}
+
+@media (max-width: 320px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+}
+

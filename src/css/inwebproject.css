@@ -1,0 +1,746 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani Medium";
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.3)),url("../asserts/img/pexels-vlada-karpovich-4050308.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo h1{
+    width: 135px;
+    color: #2A9D8F;
+    font-size: 34px;
+}
+.nav-logo h1:hover{
+    color: white;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #2A9D8F;
+    display: block;
+    margin: auto;
+    transition:.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.vertical-bar{
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.Search-icon{
+    height: 60%;
+    width: 80px;
+}
+.Search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Social-icon{
+    height: 35%;
+    width: 80px;
+    background: #2A9D8F;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.Social-icon .fa {
+    margin: 15px 23px;
+    display: block;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.webProject  div {
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    top: 0;
+}
+.webProject2  div {
+    display: inline-block;
+    height: 150px;
+    width: 200px;
+    bottom: 20%;
+}
+.webProject  div:hover{
+    bottom: 21%;
+}
+.webProject2  div:hover{
+    bottom: 21%;
+}
+.webProject3  div:hover{
+    bottom: 21%;
+}
+
+.PosSystem{
+    left: 10%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    background: #055160;
+    overflow-x: hidden;
+    background-size: cover;
+    cursor: pointer;
+    animation: chgNon 1s ease;
+}
+.PosSystem label{
+    font-weight: bold;
+    bottom: 60%;
+    margin: auto;
+    position: absolute;
+    left: 28%;
+    color: white;
+    font-size: 18px;
+}
+.PosSystem p{
+    font-weight: bold;
+    bottom: 40%;
+    margin: auto;
+    position: absolute;
+    left: 13%;
+    color: white;
+    font-size: 12px;
+}
+
+.css{
+    left: 30%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    background: darkgoldenrod;
+    overflow-x: hidden;
+    background-size: cover;
+    cursor: pointer;
+    animation: chgNon 2s ease;
+}
+
+.html{
+    left: 50%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    background: darkolivegreen;
+    cursor: pointer;
+    animation: chgNon 3s ease;
+}
+
+.js{
+    left: 70%;
+    bottom: 20%;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+    background: darkblue;
+    overflow-x: hidden;
+    background-size: cover;
+    cursor: pointer;
+    animation: chgNon 4s ease;
+}
+
+@keyframes chgNon {
+    0%{
+        bottom: 0%;
+    }100%{
+         bottom: 20%;
+         visibility: visible;
+     }
+}
+
+.fa-close{
+    visibility: hidden;
+}
+.fa-bars{
+    visibility: hidden;
+}
+
+
+@media (max-width: 1024px) {
+    .webProject  div {
+        display: inline-block;
+        height: 100px;
+        width: 150px;
+        top: 0;
+    }
+    .webProject2  div {
+        display: inline-block;
+        height: 100px;
+        width: 150px;
+        top: 30%;
+    }
+    .webProject  div:hover{
+        bottom: 21%;
+    }
+    .webProject2  div:hover{
+        bottom: 41%;
+    }
+
+
+    .PosSystem{
+        left: 10%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: #055160;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg1 1s ease;
+    }
+    .PosSystem label{
+        font-weight: bold;
+        bottom: 60%;
+        margin: auto;
+        position: absolute;
+        left: 26%;
+        color: white;
+        font-size: 16px;
+    }
+    .PosSystem p{
+        font-weight: bold;
+        bottom: 40%;
+        margin: auto;
+        position: absolute;
+        left: 19%;
+        color: white;
+        font-size: 8px;
+    }
+
+    .css{
+        left: 30%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkgoldenrod;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg1 2s ease;
+    }
+
+    .html{
+        left: 50%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkolivegreen;
+        cursor: pointer;
+        animation: chg1 3s ease;
+    }
+
+    .js{
+        left: 70%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkblue;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg1 4s ease;
+    }
+
+    @keyframes chg1 {
+        0%{
+            bottom: 0%;
+        }100%{
+             bottom: 20%;
+         }
+    }
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+
+    .webProject  div {
+        display: inline-block;
+        height: 90px;
+        width: 130px;
+        top: 0;
+    }
+    .webProject2  div {
+        display: inline-block;
+        height: 90px;
+        width: 130px;
+        bottom: 20%;
+    }
+    .webProject  div:hover{
+        bottom: 21%;
+    }
+    .webProject2  div:hover{
+        bottom: 21%;
+    }
+    .webProject3  div:hover{
+        bottom: 21%;
+    }
+
+
+
+    .PosSystem{
+        left: 8%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: #055160;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg768 1s ease;
+    }
+    .PosSystem label{
+        font-weight: bold;
+        bottom: 57%;
+        margin: auto;
+        position: absolute;
+        left: 22%;
+        color: white;
+        font-size: 16px;
+    }
+    .PosSystem p{
+        font-weight: bold;
+        bottom: 35%;
+        margin: auto;
+        position: absolute;
+        left: 14%;
+        color: white;
+        font-size: 8px;
+    }
+
+    .css{
+        left: 28%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkgoldenrod;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg768 2s ease;
+    }
+
+    .html{
+        left: 48%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkolivegreen;
+        cursor: pointer;
+        animation: chg768 3s ease;
+    }
+
+    .js{
+        left: 68%;
+        bottom: 20%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkblue;
+        overflow-x: hidden;
+        background-size: cover;
+        cursor: pointer;
+        animation: chg768 4s ease;
+    }
+
+    @keyframes chg768 {
+        0%{
+            bottom: 0%;
+        }100%{
+             bottom: 20%;
+         }
+    }
+}
+
+@media (max-width: 425px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+
+    .webProject  div {
+        display: flex;
+        height: 120px;
+        width: 260px;
+        top: 0;
+    }
+    .webProject2  div {
+
+    }
+    .webProject  div:nth-child(1):hover{
+        bottom: 61%;
+    }
+    .webProject  div:nth-child(2):hover{
+        bottom: 36%;
+    }
+    .webProject  div:nth-child(3):hover{
+        bottom: 11%;
+    }
+    .webProject  div:nth-child(4):hover{
+        bottom: -14%;
+    }
+
+    .PosSystem{
+        left: 20%;
+        bottom: 60%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: #055160;
+        cursor: pointer;
+        animation: chg1 1s ease;
+    }
+    .PosSystem label{
+        font-weight: bold;
+        bottom: 57%;
+        margin: auto;
+        position: absolute;
+        left: 30%;
+        color: white;
+        font-size: 22px;
+    }
+    .PosSystem p{
+        font-weight: bold;
+        bottom: 35%;
+        margin: auto;
+        position: absolute;
+        left: 18%;
+        color: white;
+        font-size: 14px;
+    }
+
+    .css{
+        left: 20%;
+        bottom: 35%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkgoldenrod;
+        cursor: pointer;
+        animation: chg2 2s ease;
+    }
+
+    .html{
+        left: 20%;
+        bottom: 10%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkolivegreen;
+        cursor: pointer;
+        animation: chg3 3s ease;
+    }
+
+    .js{
+        left: 20%;
+        bottom: -15%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkblue;
+        cursor: pointer;
+        animation: chg4 4s ease;
+
+    }
+
+    @keyframes chg1 {
+
+        0%{
+            bottom: 35%;
+        }100%{
+             bottom: 60%;
+         }
+    }
+    @keyframes chg2 {
+
+        0%{
+            bottom: 0%;
+        }100%{
+             bottom: 35%;
+         }
+    }
+    @keyframes chg3 {
+
+        0%{
+            bottom: -20%;
+        }100%{
+             bottom: 10%;
+         }
+    }
+    @keyframes chg4 {
+
+        0%{
+            bottom: -45%;
+        }100%{
+             bottom: -15%;
+         }
+    }
+}
+
+@media (max-width: 320px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+
+    .webProject  div {
+        display: flex;
+        height: 120px;
+        width: 200px;
+        top: 0;
+    }
+    .webProject2  div {
+
+    }
+    .webProject  div:hover{
+        bottom: 21%;
+    }
+
+
+    .PosSystem{
+        left: 20%;
+        bottom: 60%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: #055160;
+        cursor: pointer;
+        animation: chg1 1s ease;
+    }
+    .PosSystem label{
+        font-weight: bold;
+        bottom: 57%;
+        margin: auto;
+        position: absolute;
+        left: 30%;
+        color: white;
+        font-size: 18px;
+    }
+    .PosSystem p{
+        font-weight: bold;
+        bottom: 35%;
+        margin: auto;
+        position: absolute;
+        left: 18%;
+        color: white;
+        font-size: 10px;
+    }
+
+    .css{
+        left: 20%;
+        bottom: 35%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkgoldenrod;
+        cursor: pointer;
+        animation: chg2 2s ease;
+    }
+
+    .html{
+        left: 20%;
+        bottom: 10%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkolivegreen;
+        cursor: pointer;
+        animation: chg3 3s ease;
+    }
+
+    .js{
+        left: 20%;
+        bottom: -15%;
+        margin: auto;
+        position: absolute;
+        border-radius: 10px;
+        background: darkblue;
+        cursor: pointer;
+        animation: chg4 4s ease;
+
+    }
+
+    @keyframes chg1 {
+
+        0%{
+            bottom: -35%;
+        }100%{
+             bottom: 60%;
+         }
+    }
+    @keyframes chg2 {
+
+        0%{
+            bottom: 0%;
+        }100%{
+             bottom: 35%;
+         }
+    }
+    @keyframes chg3 {
+
+        0%{
+            bottom: -20%;
+        }100%{
+             bottom: 10%;
+         }
+    }
+    @keyframes chg4 {
+
+        0%{
+            bottom: -45%;
+        }100%{
+             bottom: -15%;
+         }
+    }
+}
+
+

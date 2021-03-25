@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rajdhani Medium";
+}
+.hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.3)),url("../asserts/img/pexels-christina-morillo-1181282.jpg");
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+}
+.nav-logo h1{
+    width: 135px;
+    color: yellow;
+    font-size: 34px;
+}
+.nav-logo h1:hover{
+    color: white;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    display: inline;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul a{
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition:.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.title{
+    margin: 80px 130px;
+    color: white;
+
+}
+.title h1{
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+.title h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.title h1 span{
+    color: yellow;
+    animation: chg 1s ease;
+    animation-delay: .5s;
+}
+
+.title h2 span{
+    color: greenyellow;
+    animation: chg 1s ease;
+    animation-delay: .5s;
+}
+@keyframes chg {
+    0%{
+        color: white;
+    }
+    50%{
+        color: azure;
+    }
+    100%{
+        color: yellow;
+    }
+}
+.btn{
+    padding: 10px 20px;
+    background: aqua;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.pro-pic{
+    top: 20%;
+    right: 50%;
+    margin: auto;
+    position: absolute;
+}
+.pro-pic img{
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0, 0, 0, 0.1)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+    border-radius: 20px;
+    border: 2px solid black;
+    background-size: cover;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.vertical-bar{
+    height: 100vh;
+    background: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.Search-icon{
+    height: 60%;
+    width: 80px;
+}
+.Search-icon .fa{
+    margin: 45px 23px;
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Social-icon{
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+.Social-icon .fa {
+    margin: 15px 23px;
+    display: block;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.fa-close{
+    visibility: hidden;
+}
+.fa-bars{
+    visibility: hidden;
+}
+
+@media (max-width: 1070px) {
+    .pro-pic{
+        top: 30%;
+        left: 55%;
+        margin: auto;
+        position: absolute;
+    }
+    .pro-pic img{
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.3)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+        border-radius: 20px;
+        border: 2px solid black;
+        position: absolute;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .pro-pic{
+        top: 30%;
+        left: 480px;
+        margin: auto;
+        position: absolute;
+    }
+    .pro-pic img{
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.3)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+        border-radius: 20px;
+        border: 2px solid black;
+        position: absolute;
+    }
+}
+
+@media (max-width: 768px) {
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .nav-links a{
+        margin-left: 10px;
+    }
+    .pro-pic{
+        top: 45%;
+        left: 200px;
+        margin: auto;
+        position: absolute;
+    }
+    .pro-pic img{
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.3)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+        border-radius: 20px;
+        border: 2px solid black;
+        position: absolute;
+    }
+}
+
+@media (max-width: 425px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+    .pro-pic{
+        top: 60%;
+        left: 9%;
+        margin: auto;
+        position: absolute;
+    }
+    .pro-pic img{
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.3)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+        border-radius: 20px;
+        border: 2px solid black;
+        position: absolute;
+    }
+}
+
+@media (max-width: 320px) {
+    .vertical-bar{
+        display: none;
+    }
+    .fa-bars{
+        visibility: visible;
+        cursor: pointer;
+        color: white;
+    }
+
+    .fa-close{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .title{
+        margin: 80px 40px;
+    }
+    .title h1{
+        font-size: 30px;
+    }
+    .nav-bar{
+        padding: 10px 30px;
+    }
+    .fa-bars{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+    .nav-bar .fa{
+        display: block;
+        color: black;
+        margin: 10px 25px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-links{
+        height: 100vh;
+        width: 200px;
+        background: black;
+        top: 0;
+        right: -200px;
+        position: absolute;
+        color: white;
+        z-index: 5;
+    }
+    .nav-links a{
+        display: block;
+        margin-left: 35px;
+    }
+    .pro-pic{
+        top:65%;
+        left: 20%;
+        margin: auto;
+        position: absolute;
+    }
+    .pro-pic img{
+        width: 180px;
+        height: 180px;
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0, 0, 0, 0.3)),url("../asserts/img/IMG-20201122-WA0004.jpg");
+        border-radius: 20px;
+        border: 2px solid black;
+        position: absolute;
+    }
+}
+

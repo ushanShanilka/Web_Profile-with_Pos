@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS_System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body >
+<script src="assests/js/bootstrap.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <img class="navbar-brand" src="assests/icon/icons8_shop_52px_9.png">
+        <a class="navbar-brand font fw-bold fs-3 text-danger" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold">
+                <a id="btnHome" class="nav-link "href="#">Home</a>
+                <a id="btnCustomer" class="nav-link" href="#">Customer</a>
+                <a id="btnItem" class="nav-link" href="#">Item</a>
+                <a id="btnOrder" class="nav-link" href="#">Order</a>
+            </div>
+        </div>
+    </div>
+    <span class="navbar-nav fw-bold">
+        <a id="btnOrderDetails" class="nav-link "href="#">Order Details</a>
+    </span>
+    <div>
+    <a class="nav-link" href="../../inwebproject.html"><img style="width: 40px;height: 40Px;padding-right: 10px" src="assests/img/shutdown_100px.png"></a>
+    </div>
+</nav>
+
+<div id="Home">
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assests/img/depositphotos_158349196-stock-photo-point-of-sale-system-for.jpg" height="615px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assests/img/w4NWFe.jpg" height="615px" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="assests/img/notebook-1280538_1920.jpg" height="615px" class="d-block w-100" alt="...">
+            </div>
+            <a style="position: absolute;left: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto" class="nav-link" href="#">
+                <button id="btnGetStared" class="btn btn-success" type="button"  style="position: absolute;right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;width: 200px;height: 80px;z-index: 1" > Get Stared</button>
+                <div style="width: 200px;
+            height: 80px;
+            border: 3px solid #146c43;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            animation-name: chanagesize;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            z-index: 0;
+"></div>
+            </a>
+            <div class="customer">
+                <label class="homecontanttopCustomer">Customers</label>
+                <img style="position:absolute;margin:auto;left: 23%;bottom: 33px;" src="assests/icon/customer_100px.png">
+                <label id="lblCustomerGetLength" class="homecontantbottomCustomer"></label>
+            </div>
+            <div class="item">
+                <label class="homecontanttopItem">Items</label>
+                <img style="position:absolute;margin:auto;left: 23%;bottom: 33px;" src="assests/icon/similar_items_100px.png">
+                <label id="lblItemGetLength" class="homecontantbottomItem"></label>
+            </div>
+            <div class="order">
+                <label class="homecontanttopOrder">Orders</label>
+                <img style="position:absolute;margin:auto;left: 23%;bottom: 33px;" src="assests/icon/shopping_cart_100px.png">
+                <label id="lblOrderGetLength" class="homecontantbottomOrder"></label>
+            </div>
+            <div class="orderDetails">
+                <label class="homecontanttopOrderDetails">Order Details</label>
+                <img style="position:absolute;margin:auto;left: 23%;bottom: 33px;" src="assests/icon/order_history_100px.png">
+                <label id="lblorderDetailsGetLength" class="homecontantbottomOrderDetails"></label>
+            </div>
+        </div>
+        <button style="opacity: 0;text-align: center" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button style="opacity: 0" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span  class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</div>
+
+<div id="Customer">
+
+    <section class="container-fluid">
+        <section class="row px-2 ">
+            <div class=" col">
+                <div class="form-floating p-2">
+                    <input type="text" class="form-control" id="customerID" placeholder="id@example.com">
+                    <label for="customerID">Customer Id</label>
+                    <span class="control-error" id="lblcusId"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="text" class="form-control" id="customerName" placeholder="name@example.com">
+                    <label for="customerName">Customer Name</label>
+                    <span class="control-error" id="lblcusName"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="text" class="form-control" id="customerAddress" placeholder="address@example.com">
+                    <label for="customerAddress">Customer Address</label>
+                    <span class="control-error" id="lblcusAddress"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="number" class="form-control" id="customerSalary" placeholder="salary@example.com">
+                    <label for="customerSalary">Customer Salary</label>
+                    <span class="control-error" id="lblcusSalary"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="col p-2">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button id="btnSaveCustomer" class="btn btn-success me-md-2 p-2" type="button">Save</button>
+                <button id="btnGetAllCustomer" class="btn btn-secondary me-md-2 p-2" type="button">Get All</button>
+                <button id="btnCustomerUpdate" class="btn btn-info" type="button">Update</button>
+                <button id="btnDeleteCustomer" type="button" class="btn btn-danger" type="button">Delete</button>
+            </div>
+        </section>
+
+        <table class="table table-bordered table-hover shadow-sm">
+            <thead class="bg-primary text-white">
+            <th>Customer ID</th>
+            <th>Customer Name</th>
+            <th>Customer Address</th>
+            <th>Customer Salary</th>
+            </thead>
+            <tbody id="CustomerTable">
+
+            </tbody>
+        </table>
+
+    </section>
+
+</div>
+
+<div id="Item">
+
+    <section class="container-fluid">
+        <section class="row px-2 ">
+            <div class=" col">
+                <div class="form-floating p-2">
+                    <input type="Item Code" class="form-control" id="itemCode" placeholder="code@example.com">
+                    <label for="itemCode">Item Code</label>
+                    <span class="control-error" id="lblIcode"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="item name" class="form-control" id="itemName" placeholder="name@example.com">
+                    <label for="itemName">Item Name</label>
+                    <span class="control-error" id="lblIname"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="Qty" class="form-control" id="itemQty" placeholder="qty@example.com">
+                    <label for="itemQty">Qty</label>
+                    <span class="control-error" id="lblIqty"></span>
+                </div>
+                <div class="form-floating p-2">
+                    <input type="unit price" class="form-control" id="itemunitPrice" placeholder="unitprice@example.com">
+                    <label for="itemunitPrice">Unit Price</label>
+                    <span class="control-error" id="lblIunitprice"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="col p-2">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button id="btnItemSave" class="btn btn-success me-md-2 p-2" type="button">Save</button>
+                <button id="btnGetAllItem" class="btn btn-warning me-md-2 p-2" type="button">Get All Item</button>
+                <button id="btnUpdateItem" class="btn btn-info" type="button">Update</button>
+                <button id="btnDeleteItem" type="button" class="btn btn-danger" type="button">Delete</button>
+            </div>
+        </section>
+
+        <table class="table table-bordered table-hover shadow-sm">
+            <thead class="bg-primary text-white">
+            <th>Item Code</th>
+            <th>Item Name</th>
+            <th>Qty</th>
+            <th>Unit Price</th>
+            </thead>
+            <tbody id="ItemTable">
+
+            </tbody>
+        </table>
+
+    </section>
+
+</div>
+
+<div id="Order">
+
+    <form class="row mx-4 mb-5">
+
+        <div class="col-auto g-3">
+            <label for="orderID" class="control">Order Id :</label>
+            <input  type="orderId" class="form-control" id="orderID" placeholder="">
+            <span class="control-error" id="lblOrderId"></span>
+
+        </div>
+        <div class="col-auto g-3">
+            <label for="orderDate" class="control" >Date :</label>
+            <input type="date" class="form-control" id="orderDate">
+        </div>
+    </form >
+
+    <form class="row mx-3">
+
+        <section class="row mb-5">
+            <section class="col-3">
+                <label for="selectCustomerID" class="control">Select Customer ID :</label>
+                <select id="selectCustomerID" class="form-select" ></select>
+                <span class="control-error" id="lblSelectCusId"></span>
+            </section>
+            <div class="col-auto ">
+                <label for="orderCusName" class="control">Customer Name :</label>
+                <input type="customer Name" class="form-control" id="orderCusName" placeholder="">
+                <span class="control-error" id="lblSelectCusName"></span>
+            </div>
+        </section>
+
+        <section class="row">
+            <section class="col-3 ">
+                <label for="selectItemCode" class="control">Select Item Code :</label>
+                <select id="selectItemCode" class="form-select " aria-label=""></select>
+                <span class="control-error" id="lblSelectItemCode"></span>
+            </section>
+            <div class="col-auto">
+                <label for="orderItemName" class="control">Item Name :</label>
+                <input type="Item Name" class="form-control" id="orderItemName" placeholder="">
+            </div>
+
+            <div class="col-auto">
+                <label for="orderItemUnitPrice" class="control">Unit Price :</label>
+                <input type="Unit Price" class="form-control" id="orderItemUnitPrice" placeholder="">
+            </div>
+            <div class="col-auto">
+                <label for="oitemQty" class="control">Item Qty :</label>
+                <input type="oitemQty" class="form-control" id="oitemQty" placeholder="">
+            </div>
+            <section class="col-2 ">
+                <div class="col-auto ">
+                    <label for="orderQty" class="control">Order Qty :</label>
+                    <input type="Qty" style="font-weight: bold" class="form-control btn-outline-dark" id="orderQty" placeholder="">
+                    <span class="control1" id="lblOrderQty"></span>
+                </div>
+            </section>
+        </section>
+
+    </form>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-2 mx-3">
+        <button id="btnOrderAdd" class="btn btn-warning me-md-2" type="button">Add</button>
+        <button id="btnClear" class="btn btn-info" type="button">Clear</button>
+    </div>
+
+    <table class="table table-bordered table-hover shadow-sm ">
+        <thead class="bg-primary text-white">
+        <th>Order ID</th>
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Unit Price</th>
+        <th>qty</th>
+        </thead>
+        <tbody id="OrderTable">
+
+        </tbody>
+    </table>
+
+
+    <div id="lblTotal" class="badge bg-primary text-wrap p-3" style="width: 10rem;height: 3rem;font-size: 15px">
+    </div>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2 mx-2">
+        <button id="btnPlaceOrder" class="btn btn-success me-md-2 p-3" type="button">Place Order</button>
+    </div>
+
+
+</div>
+
+<div id="OrderDetails">
+    <div>
+        <section class="col p-2">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button id="btnGetAllOrderDetails" class="btn btn-secondary me-md-2 p-2" type="button">Get All</button>
+            </div>
+        </section>
+        <table class="table table-bordered table-hover shadow-sm ">
+            <thead class="bg-primary text-white">
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Customer Id</th>
+            <th>Item Code</th>
+            <th>Order Qty</th>
+            </thead>
+            <tbody id="OrderDetailsTable">
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script src="controller/NavbarController.js"></script>
+<script src="controller/CustomerFormController.js"></script>
+<script src="controller/ItemFormController.js"></script>
+<script src="controller/OrderFormController.js"></script>
+<script src="controller/OrderDetailsFormController.js"></script>
+<script src="db/DB.js"></script>
+<script src="dto/CustomerDTO.js"></script>
+<script src="dto/ItemDTO.js"></script>
+<script src="dto/OrderDTO.js"></script>
+<script src="dto/OrderDetailsDTO.js"></script>
+
+
+</body>
+</html>
